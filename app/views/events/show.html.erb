@@ -1,0 +1,16 @@
+<div class="page-header"><div class="pull-right"><%= link_to "Edit Event", edit_location_event_path, class: "btn btn-info" %></div>
+  <h2><%=@event.description%></h2></div>
+
+
+<dl class="dl-horizontal">
+<dt>Name</dt>
+<dd><%= @event.description %></dd>
+<dt>Address</dt>
+<dd><%= @event.date %></dd>
+<dt>Zip Code</dt>
+<dd><%= @event.requires_id %></dd>
+</dl>
+
+<br>
+
+<%= link_to "Delete Event", location_event_path, class: "btn btn-danger", method: :delete %>
